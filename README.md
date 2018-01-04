@@ -7,4 +7,4 @@ Run this from the command line, as your IDE might use its own TestRunner ignorin
 
 In the project root execute `mvn package` to let maven create all artifacts and run the tests in module `payara-test`.
 
-Test class [RemoteEJBTest](payara-test/src/test/java/com/mycompany/poc/RemoteEJBTest.java) running in 'JVM1' will wait until it gets signalled by test class [DeploymentTest](payara-test/src/test/java/com/mycompany/poc/RemoteEJBTest.java) running in 'JVM2' when it finishes the ear deployment. I only tested this on Windows 10 / jdk-8u152 x64.
+Test class [RemoteEJBTest](payara-test/src/test/java/com/mycompany/poc/RemoteEJBTest.java) running in 'JVM1' will wait until it gets signalled by test class [DeploymentTest](payara-test/src/test/java/com/mycompany/poc/DeploymentTest.java) running in 'JVM2' when it finishes the ear deployment. I only tested this on Windows 10 / jdk-8u152 x64.
