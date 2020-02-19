@@ -1,4 +1,4 @@
-In Payara 4.1.2.174 calling a @PermitAll annotated business method in an EJB having mixed declarative security annotations (@PermitAll for one method and @RolesAllowed for another), 
+In Payara 4.1.2.174 and 5.184 calling a @PermitAll annotated business method in an EJB having mixed declarative security annotations (@PermitAll for one method and @RolesAllowed for another), 
 via its remote interface. Results in an java.rmi.AccessException see: https://github.com/payara/Payara/issues/2223
 
 This 'simple' project reproduces this behaviour. Different JVM processes are required, 
